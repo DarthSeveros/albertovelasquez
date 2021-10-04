@@ -22,11 +22,9 @@ p {
 
 .logo {
     margin-top: 14px;
-    display: inline-block;
-    width: 70%;
 }
 .logo>a>img {
-    width: 15%;
+    width: 180px;
 }
 
 header {
@@ -36,7 +34,7 @@ header {
 }
 
 .header-content {
-    color: #18A0FB;
+    color: rgb(24, 160, 251);
 }
 
 .header-content h3 {
@@ -47,8 +45,8 @@ header {
     font-size: 30px;
 }
 
-.header-content a:visited {
-    color: #18A0FB;
+.header-content a:link, .header-content a:visited {
+    color: rgb(24, 160, 251);
 } 
 
 .header-content a:hover {
@@ -129,9 +127,39 @@ footer>div {
     margin: 10px;
 }
 
-@media only screen and (max-width: 600px) {
-    .logo {
+@media only screen and (max-width: 820px) {
+    header {
         display: block;
+        text-align: center;
+    }
+    .logo, .header-content {
+        margin: auto;
+    }
+
+    footer {
+        text-align: center;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1020px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .item1, .item2, .item3, .item4 , .item5 {
+        grid-column: auto;
+    }
+}
+@media only screen and (min-width: 1900px) {
+    html {
+        display: table;
+        margin: auto;
+    }
+    body {
+        display: table-cell;
+        vertical-align: middle;
+        width: 1900px;
     }
 }
 
