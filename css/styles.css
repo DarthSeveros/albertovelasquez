@@ -6,7 +6,7 @@ html{
 
 body {
     margin: 0;
-    background-color: #dbf1ff;
+    background-color: #fff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -23,6 +23,7 @@ p {
 .logo {
     margin-top: 14px;
     display: inline-block;
+    width: 70%;
 }
 .logo>a>img {
     width: 15%;
@@ -40,10 +41,10 @@ header {
 
 .header-content h3 {
     display: inline-block;
-    margin: 18px 30px;
+    margin: 30px 20px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 30px;
 }
 
 .header-content a:visited {
@@ -53,8 +54,6 @@ header {
 .header-content a:hover {
     color: chocolate;
 }
-
-
 
 /*----ABOUTME----*/
 
